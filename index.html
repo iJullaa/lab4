@@ -2,21 +2,25 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stacja Pogodowa</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+
+    <main class="container">
         <h1>Sprawdź pogodę</h1>
         <div class="search-box">
             <input type="text" id="city-input" placeholder="Wpisz nazwę miejscowości...">
-            <button id="get-weather-btn">Pogoda</button>
+            <button id="get-weather-btn">Pokaż pogodę</button>
         </div>
+
         <div id="weather-results">
-            <div id="current-weather"></div>
-            <div id="forecast"></div>
+            <div id="current-weather-container"></div>
+            <div id="forecast-container"></div>
         </div>
-    </div>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
