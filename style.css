@@ -1,0 +1,104 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#city-input {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#get-weather-btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #1a73e8;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#get-weather-btn:hover {
+    background-color: #155ab6;
+}
+
+#weather-results {
+    text-align: left;
+}
+
+.weather-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.weather-card h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #1a73e8;
+    padding-bottom: 10px;
+}
+
+.weather-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.weather-icon {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.forecast-day {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.forecast-day img {
+    width: 40px;
+    height: 40px;
+}
